@@ -19,9 +19,9 @@ struct ActivityView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(oo.data) { item in
-                        NavigationLink(destination: EmptyView()) {
-                            Text("\(item.name)")
+                    ForEach($oo.data) { $item in
+                        NavigationLink(destination: DetailedActivityView(activity: $item)) {
+                            Text(item.name)
                         }
                     }
                     .onDelete(perform: removeItems)

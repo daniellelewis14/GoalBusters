@@ -15,6 +15,7 @@
 		719D786A2A717C2800CE5976 /* ActivityOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78692A717C2800CE5976 /* ActivityOO.swift */; };
 		719D786C2A717C4400CE5976 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D786B2A717C4400CE5976 /* ActivityView.swift */; };
 		719D78762A71801300CE5976 /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78752A71801300CE5976 /* AddActivityView.swift */; };
+		719D787A2A7190A200CE5976 /* DetailedActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78792A7190A200CE5976 /* DetailedActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		719D78692A717C2800CE5976 /* ActivityOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityOO.swift; sourceTree = "<group>"; };
 		719D786B2A717C4400CE5976 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		719D78752A71801300CE5976 /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		719D78792A7190A200CE5976 /* DetailedActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,10 @@
 		719D78582A717BB700CE5976 /* Goals Busters */ = {
 			isa = PBXGroup;
 			children = (
-				719D78592A717BB700CE5976 /* Goals_BustersApp.swift */,
-				719D785B2A717BB700CE5976 /* ContentView.swift */,
 				719D786D2A717C8F00CE5976 /* Activity */,
 				719D785D2A717BBC00CE5976 /* Assets.xcassets */,
+				719D785B2A717BB700CE5976 /* ContentView.swift */,
+				719D78592A717BB700CE5976 /* Goals_BustersApp.swift */,
 				719D785F2A717BBC00CE5976 /* Preview Content */,
 			);
 			path = "Goals Busters";
@@ -79,12 +81,29 @@
 		719D786D2A717C8F00CE5976 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				719D78782A71908E00CE5976 /* DetailedActivityView */,
 				719D786B2A717C4400CE5976 /* ActivityView.swift */,
-				719D78752A71801300CE5976 /* AddActivityView.swift */,
 				719D78692A717C2800CE5976 /* ActivityOO.swift */,
 				719D78672A717BF800CE5976 /* ActivityDO.swift */,
+				719D78772A71904400CE5976 /* AddActivityView */,
 			);
 			path = Activity;
+			sourceTree = "<group>";
+		};
+		719D78772A71904400CE5976 /* AddActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				719D78752A71801300CE5976 /* AddActivityView.swift */,
+			);
+			path = AddActivityView;
+			sourceTree = "<group>";
+		};
+		719D78782A71908E00CE5976 /* DetailedActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				719D78792A7190A200CE5976 /* DetailedActivityView.swift */,
+			);
+			path = DetailedActivityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +181,7 @@
 				719D786A2A717C2800CE5976 /* ActivityOO.swift in Sources */,
 				719D78762A71801300CE5976 /* AddActivityView.swift in Sources */,
 				719D786C2A717C4400CE5976 /* ActivityView.swift in Sources */,
+				719D787A2A7190A200CE5976 /* DetailedActivityView.swift in Sources */,
 				719D785A2A717BB700CE5976 /* Goals_BustersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
