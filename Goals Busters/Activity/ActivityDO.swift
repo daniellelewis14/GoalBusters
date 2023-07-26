@@ -6,9 +6,9 @@
 //
 import Foundation
 
-struct ActivityDO: Identifiable {
-    let id = UUID()
-    var name: String
-    var description: String
+struct ActivityDO: Identifiable, Codable {
+    var id = UUID()
+    let name: String
+    let description: String
     var completionCount = 0
 }

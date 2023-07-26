@@ -11,29 +11,39 @@ struct ActivityView: View {
     @StateObject private var oo = ActivityOO()
     @State private var showAddView = false
     
+    func removeItems(at offsets: IndexSet) {
+        oo.data.remove(atOffsets: offsets)
+    }
+    
     var body: some View {
-        VStack {
-            List(oo.data) { datum in
-                Text(datum.name)
-            }
-        }
-        .task {
-            oo.fetch()
-        }
-        .sheet(isPresented: $showAddView) {
-            AddActivityView()
-                .presentationDetents([.medium])
-        }
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button {
-                    showAddView.toggle()
-                } label: {
-                    Image(systemName: "plus")
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(oo.data) { item in
+                        NavigationLink(destination: EmptyView()) {
+                            Text("\(item.name)")
+                        }
+                    }
+                    .onDelete(perform: removeItems)
                 }
             }
+            .sheet(isPresented: $showAddView) {
+                AddActivityView(oo: oo)
+                    .presentationDetents([.medium])
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showAddView.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                }
+            }
+            .navigationTitle("Goals")
         }
-        
     }
 }
 
