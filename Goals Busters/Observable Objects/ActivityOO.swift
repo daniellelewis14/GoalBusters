@@ -30,4 +30,11 @@ class ActivityOO: ObservableObject {
         
         data = []
     }
+    
+    func removeActivity(_ activity: ActivityDO) {
+        if let index = data.firstIndex(where: { $0.id == activity.id }) {
+            data.remove(at: index)
+        }
+    }
+    
 }

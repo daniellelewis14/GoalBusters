@@ -8,28 +8,36 @@
 import SwiftUI
 
 struct ActivityView: View {
-    @StateObject private var oo = ActivityOO()
+    @ObservedObject var oo: ActivityOO
     @State private var showAddView = false
-    
-    func removeItems(at offsets: IndexSet) {
-        oo.data.remove(atOffsets: offsets)
-    }
     
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    ForEach($oo.data) { $item in
-                        NavigationLink(destination: DetailedActivityView(activity: $item)) {
-                            Text(item.name)
-                        }
+                ScrollView {
+                    HStack {
+                        Text("GOals Busters")
+                            .font(Font.custom("ghostbusters", size: 40))
+                        Spacer()
                     }
-                    .onDelete(perform: removeItems)
+                    LazyVStack {
+                        ForEach($oo.data) { $item in
+                            NavigationLink(destination: DetailedActivityView(activity: $item, oo: oo)) {
+                                ListRowView(activity: $item)
+                            }
+                        }
+                        
+                    }
+                    
+                    Spacer()
                 }
             }
             .sheet(isPresented: $showAddView) {
                 AddActivityView(oo: oo)
                     .presentationDetents([.medium])
+                    .presentationBackground(.ultraThinMaterial)
+                    .presentationCornerRadius(15)
+                
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -42,13 +50,12 @@ struct ActivityView: View {
                     }
                 }
             }
-            .navigationTitle("Goals")
         }
     }
 }
 
 struct Activity_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityView()
+        ActivityView(oo: ActivityOO())
     }
 }

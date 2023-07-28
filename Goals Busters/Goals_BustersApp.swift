@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Goals_BustersApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ActivityView(oo: ActivityOO())
         }
     }
 }

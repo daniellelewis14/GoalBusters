@@ -16,6 +16,18 @@
 		719D786C2A717C4400CE5976 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D786B2A717C4400CE5976 /* ActivityView.swift */; };
 		719D78762A71801300CE5976 /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78752A71801300CE5976 /* AddActivityView.swift */; };
 		719D787A2A7190A200CE5976 /* DetailedActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78792A7190A200CE5976 /* DetailedActivityView.swift */; };
+		719D78802A72261600CE5976 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D787F2A72261600CE5976 /* ListRowView.swift */; };
+		719D78842A731CCF00CE5976 /* CircularProgressDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78832A731CCF00CE5976 /* CircularProgressDO.swift */; };
+		719D78862A731D3F00CE5976 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78852A731D3F00CE5976 /* CircularProgressView.swift */; };
+		719D78A42A73306E00CE5976 /* ColorCodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78A32A73306E00CE5976 /* ColorCodableExtension.swift */; };
+		719D78A72A734E0600CE5976 /* ghostbusters.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 719D78A62A734E0600CE5976 /* ghostbusters.TTF */; };
+		719D78AC2A73563100CE5976 /* IntrospectPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719D78AB2A73563100CE5976 /* IntrospectPackage.swift */; };
+		719D78AF2A7356BC00CE5976 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78AE2A7356BC00CE5976 /* Introspect */; };
+		719D78B12A7356BC00CE5976 /* Introspect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78B02A7356BC00CE5976 /* Introspect-Dynamic */; };
+		719D78B32A7356BC00CE5976 /* Introspect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78B22A7356BC00CE5976 /* Introspect-Static */; };
+		719D78B52A7356BC00CE5976 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78B42A7356BC00CE5976 /* SwiftUIIntrospect */; };
+		719D78B72A7356BC00CE5976 /* SwiftUIIntrospect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78B62A7356BC00CE5976 /* SwiftUIIntrospect-Dynamic */; };
+		719D78B92A7356BC00CE5976 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 719D78B82A7356BC00CE5976 /* SwiftUIIntrospect-Static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +41,13 @@
 		719D786B2A717C4400CE5976 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		719D78752A71801300CE5976 /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		719D78792A7190A200CE5976 /* DetailedActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedActivityView.swift; sourceTree = "<group>"; };
+		719D787F2A72261600CE5976 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		719D78832A731CCF00CE5976 /* CircularProgressDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressDO.swift; sourceTree = "<group>"; };
+		719D78852A731D3F00CE5976 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		719D78A32A73306E00CE5976 /* ColorCodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodableExtension.swift; sourceTree = "<group>"; };
+		719D78A62A734E0600CE5976 /* ghostbusters.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ghostbusters.TTF; sourceTree = "<group>"; };
+		719D78A82A734F1C00CE5976 /* Goals-Busters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Goals-Busters-Info.plist"; sourceTree = SOURCE_ROOT; };
+		719D78AB2A73563100CE5976 /* IntrospectPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrospectPackage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D78AF2A7356BC00CE5976 /* Introspect in Frameworks */,
+				719D78B12A7356BC00CE5976 /* Introspect-Dynamic in Frameworks */,
+				719D78B32A7356BC00CE5976 /* Introspect-Static in Frameworks */,
+				719D78B52A7356BC00CE5976 /* SwiftUIIntrospect in Frameworks */,
+				719D78B72A7356BC00CE5976 /* SwiftUIIntrospect-Dynamic in Frameworks */,
+				719D78B92A7356BC00CE5976 /* SwiftUIIntrospect-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +70,7 @@
 		719D784D2A717BB700CE5976 = {
 			isa = PBXGroup;
 			children = (
+				719D78AB2A73563100CE5976 /* IntrospectPackage.swift */,
 				719D78582A717BB700CE5976 /* Goals Busters */,
 				719D78572A717BB700CE5976 /* Products */,
 			);
@@ -61,11 +87,16 @@
 		719D78582A717BB700CE5976 /* Goals Busters */ = {
 			isa = PBXGroup;
 			children = (
-				719D786D2A717C8F00CE5976 /* Activity */,
+				719D78A82A734F1C00CE5976 /* Goals-Busters-Info.plist */,
+				719D78A52A73308200CE5976 /* Extensions */,
+				719D787D2A72258E00CE5976 /* Views */,
+				719D787E2A7225B800CE5976 /* Data Objects */,
+				719D786D2A717C8F00CE5976 /* Observable Objects */,
 				719D785D2A717BBC00CE5976 /* Assets.xcassets */,
 				719D785B2A717BB700CE5976 /* ContentView.swift */,
 				719D78592A717BB700CE5976 /* Goals_BustersApp.swift */,
 				719D785F2A717BBC00CE5976 /* Preview Content */,
+				719D78A62A734E0600CE5976 /* ghostbusters.TTF */,
 			);
 			path = "Goals Busters";
 			sourceTree = "<group>";
@@ -78,32 +109,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		719D786D2A717C8F00CE5976 /* Activity */ = {
+		719D786D2A717C8F00CE5976 /* Observable Objects */ = {
 			isa = PBXGroup;
 			children = (
-				719D78782A71908E00CE5976 /* DetailedActivityView */,
-				719D786B2A717C4400CE5976 /* ActivityView.swift */,
 				719D78692A717C2800CE5976 /* ActivityOO.swift */,
-				719D78672A717BF800CE5976 /* ActivityDO.swift */,
-				719D78772A71904400CE5976 /* AddActivityView */,
 			);
-			path = Activity;
+			path = "Observable Objects";
 			sourceTree = "<group>";
 		};
-		719D78772A71904400CE5976 /* AddActivityView */ = {
+		719D787D2A72258E00CE5976 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				719D786B2A717C4400CE5976 /* ActivityView.swift */,
 				719D78752A71801300CE5976 /* AddActivityView.swift */,
+				719D787F2A72261600CE5976 /* ListRowView.swift */,
+				719D78792A7190A200CE5976 /* DetailedActivityView.swift */,
+				719D78852A731D3F00CE5976 /* CircularProgressView.swift */,
 			);
-			path = AddActivityView;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		719D78782A71908E00CE5976 /* DetailedActivityView */ = {
+		719D787E2A7225B800CE5976 /* Data Objects */ = {
 			isa = PBXGroup;
 			children = (
-				719D78792A7190A200CE5976 /* DetailedActivityView.swift */,
+				719D78672A717BF800CE5976 /* ActivityDO.swift */,
+				719D78832A731CCF00CE5976 /* CircularProgressDO.swift */,
 			);
-			path = DetailedActivityView;
+			path = "Data Objects";
+			sourceTree = "<group>";
+		};
+		719D78A52A73308200CE5976 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				719D78A32A73306E00CE5976 /* ColorCodableExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +162,14 @@
 			dependencies = (
 			);
 			name = "Goals Busters";
+			packageProductDependencies = (
+				719D78AE2A7356BC00CE5976 /* Introspect */,
+				719D78B02A7356BC00CE5976 /* Introspect-Dynamic */,
+				719D78B22A7356BC00CE5976 /* Introspect-Static */,
+				719D78B42A7356BC00CE5976 /* SwiftUIIntrospect */,
+				719D78B62A7356BC00CE5976 /* SwiftUIIntrospect-Dynamic */,
+				719D78B82A7356BC00CE5976 /* SwiftUIIntrospect-Static */,
+			);
 			productName = "Goals Busters";
 			productReference = 719D78562A717BB700CE5976 /* Goals Busters.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 719D784D2A717BB700CE5976;
+			packageReferences = (
+				719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			productRefGroup = 719D78572A717BB700CE5976 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,6 +217,7 @@
 			files = (
 				719D78612A717BBC00CE5976 /* Preview Assets.xcassets in Resources */,
 				719D785E2A717BBC00CE5976 /* Assets.xcassets in Resources */,
+				719D78A72A734E0600CE5976 /* ghostbusters.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				719D78682A717BF800CE5976 /* ActivityDO.swift in Sources */,
+				719D78AC2A73563100CE5976 /* IntrospectPackage.swift in Sources */,
 				719D785C2A717BB700CE5976 /* ContentView.swift in Sources */,
 				719D786A2A717C2800CE5976 /* ActivityOO.swift in Sources */,
+				719D78A42A73306E00CE5976 /* ColorCodableExtension.swift in Sources */,
 				719D78762A71801300CE5976 /* AddActivityView.swift in Sources */,
+				719D78842A731CCF00CE5976 /* CircularProgressDO.swift in Sources */,
 				719D786C2A717C4400CE5976 /* ActivityView.swift in Sources */,
 				719D787A2A7190A200CE5976 /* DetailedActivityView.swift in Sources */,
 				719D785A2A717BB700CE5976 /* Goals_BustersApp.swift in Sources */,
+				719D78802A72261600CE5976 /* ListRowView.swift in Sources */,
+				719D78862A731D3F00CE5976 /* CircularProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +376,7 @@
 				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Goals-Busters-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +406,7 @@
 				DEVELOPMENT_TEAM = 7VM5MRXF6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Goals-Busters-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,6 +447,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		719D78AE2A7356BC00CE5976 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = Introspect;
+		};
+		719D78B02A7356BC00CE5976 /* Introspect-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "Introspect-Dynamic";
+		};
+		719D78B22A7356BC00CE5976 /* Introspect-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "Introspect-Static";
+		};
+		719D78B42A7356BC00CE5976 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		719D78B62A7356BC00CE5976 /* SwiftUIIntrospect-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Dynamic";
+		};
+		719D78B82A7356BC00CE5976 /* SwiftUIIntrospect-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719D78AD2A7356BC00CE5976 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 719D784E2A717BB700CE5976 /* Project object */;
 }
