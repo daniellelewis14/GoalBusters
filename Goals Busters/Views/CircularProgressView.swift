@@ -32,5 +32,5 @@ struct CircularProgressView: View {
 }
 
 #Preview {
-    CircularProgressView(activity: Binding.constant(ActivityDO(name: "Test activity", description: "Test activity description")))
+    CircularProgressView(activity: .constant(ActivityDO.sampleData[1]))
 }
