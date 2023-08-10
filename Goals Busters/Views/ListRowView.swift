@@ -11,12 +11,6 @@ struct ListRowView: View {
     @Binding var activity: ActivityDO
     @StateObject private var oo = ActivityOO()
     
-    
-    func sampleData() {
-        let activity = ActivityDO(name: "Test", description: "This is a test item", completionCount: 7)
-        oo.data.append(activity)
-    }
-    
     var body: some View {
         Section {
             HStack {
@@ -52,5 +46,5 @@ struct ListRowView: View {
 
 
 #Preview {
-    ListRowView(activity: Binding.constant(ActivityDO(name: "Test activity", description: "Test activity description")))
+    ListRowView(activity: .constant(ActivityDO.sampleData[0]))
 }
