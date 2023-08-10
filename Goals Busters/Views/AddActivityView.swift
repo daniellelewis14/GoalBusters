@@ -10,6 +10,7 @@ import SwiftUI
 struct AddActivityView: View {
     @State private var name = ""
     @State private var description = ""
+    @State private var goalCompletions = 0
     @ObservedObject var oo: ActivityOO
     @State private var color = Color.black
     @Environment(\.dismiss) var dismiss
@@ -45,12 +46,24 @@ struct AddActivityView: View {
                             .stroke(color, lineWidth: 2)
                     )
                     .padding(5)
+                HStack {
+                    Text("Goal Completions: ") +
+                    Text(" \(goalCompletions + 1)")
+                }
+                    .font(.system(.headline, design: .serif))
+                    .padding(5)
+                Picker("Goal completions", selection: $goalCompletions) {
+                    ForEach(1..<201) { number in
+                        Text("\(number)")
+                    }
+                }
+                .pickerStyle(.wheel)
             }
             
             Spacer()
             
             Button {
-                let goal = ActivityDO(name: name, description: description, color: color)
+                let goal = ActivityDO(name: name, description: description, goalCompletions: goalCompletions, color: color)
                 oo.data.append(goal)
                 dismiss()
             } label: {
