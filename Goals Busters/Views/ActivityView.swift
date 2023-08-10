@@ -34,7 +34,6 @@ struct ActivityView: View {
             }
             .sheet(isPresented: $showAddView) {
                 AddActivityView(oo: oo)
-                    .presentationDetents([.medium])
                     .presentationBackground(.ultraThinMaterial)
                     .presentationCornerRadius(15)
                 
