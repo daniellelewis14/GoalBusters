@@ -16,11 +16,11 @@ struct CircularProgressDO: ProgressViewStyle {
         
         var strokeColor = Color.clear
         
-        if activity.completionCount <= 3 {
+        if activity.completionCount < 3 {
             strokeColor = Color.red
-        } else if activity.completionCount <= 5 {
+        } else if activity.completionCount < 5 {
             strokeColor = Color.blue
-        } else if activity.completionCount <= 10 {
+        } else if activity.completionCount < 10 {
             strokeColor = Color.green
         } else {
             strokeColor = Color.yellow
