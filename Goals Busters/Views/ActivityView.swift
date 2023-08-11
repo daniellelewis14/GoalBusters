@@ -15,11 +15,6 @@ struct ActivityView: View {
         NavigationView {
             VStack {
                 ScrollView {
-                    HStack {
-                        Text("GOals Busters")
-                            .font(Font.custom("ghostbusters", size: 40))
-                        Spacer()
-                    }
                     LazyVStack {
                         ForEach($oo.data) { $item in
                             NavigationLink(destination: DetailedActivityView(activity: $item, oo: oo)) {
@@ -32,6 +27,7 @@ struct ActivityView: View {
                     Spacer()
                 }
             }
+            .navigationTitle("Goals Busters")
             .sheet(isPresented: $showAddView) {
                 AddActivityView(oo: oo)
                     .presentationBackground(.ultraThinMaterial)
