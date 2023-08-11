@@ -13,7 +13,7 @@ class ActivityOO: ObservableObject {
     @Published var data = [ActivityDO]() {
         didSet {
             let encoder = JSONEncoder()
-            // Encodes data once added to Expense Item array
+            // Encodes data once added to ActivityOO array
             if let encoded = try? encoder.encode(data) {
                 UserDefaults.standard.set(encoded, forKey: "Data")
             }
@@ -38,3 +38,5 @@ class ActivityOO: ObservableObject {
     }
     
 }
+
+
