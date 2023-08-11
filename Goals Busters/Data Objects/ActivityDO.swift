@@ -22,12 +22,28 @@ struct ActivityDO: Identifiable, Codable, Equatable {
         self.goalCompletions = goalCompletions
         self.color = color
     }
+    
+    var percentageComplete: Double {
+        get {
+            var percentage = Double(self.completionCount) / Double(self.goalCompletions)
+            if percentage < 0 {
+                return 0
+            } else {
+                return percentage
+            }
+        }
+        set {
+            
+        }
+    }
+    
+    
 }
 
 extension ActivityDO {
     static let sampleData = [
-        ActivityDO(name: "Learn VisionOS", description: "Get the VisionOS SDK and get to work!", goalCompletions: 100),
-        ActivityDO(name: "Learn SwiftUI", description: "100 Days of SwiftUI", goalCompletions: 100),
+        ActivityDO(name: "Learn VisionOS", description: "Get the VisionOS SDK and get to work!", completionCount: 30, goalCompletions: 100),
+        ActivityDO(name: "Learn SwiftUI", description: "100 Days of SwiftUI", completionCount: 8, goalCompletions: 100),
         ActivityDO(name: "Exercise", description: "100 push ups a day for 30 days", goalCompletions: 30)
     ]
 }
