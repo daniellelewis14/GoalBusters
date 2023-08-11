@@ -29,14 +29,18 @@ struct DetailedActivityView: View {
                     
             }
             ZStack {
-                Text("\(activity.completionCount)")
-                    .font(.system(size: 100))
-                    .fontWeight(.black)
-                    .foregroundStyle(activity.color)
+                Button {
+                    //action
+                } label: {
+                    Text("\(activity.completionCount)")
+                        .font(.system(size: 80))
+                        .fontWeight(.black)
+                        .foregroundStyle(activity.color)
+                }
                 
                 CircularProgressView(activity: $activity)
                     .padding([.top, .bottom])
-                    .frame(width: 200, height: 200)
+                    .frame(width: 230, height: 230)
                 
             }
             
@@ -95,6 +99,6 @@ struct DetailedActivityView: View {
     
 }
 
-//#Preview {
-//    DetailedActivityView(activity: Binding.constant(ActivityDO(name: "Test name", description: "Test description")))
-//}
+#Preview {
+    DetailedActivityView(activity: .constant(ActivityDO.sampleData[0]), oo: ActivityOO())
+}

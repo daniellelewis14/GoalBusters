@@ -45,6 +45,8 @@ struct ListRowView: View {
 
 
 
-#Preview {
-    ListRowView(activity: .constant(ActivityDO.sampleData[0]))
+struct ListRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        ListRowView(activity: .constant(ActivityDO.sampleData[1]))
+    }
 }
